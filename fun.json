@@ -1,0 +1,37 @@
+var data = {"users":[
+    {"usernam":"anantprsd5", "pass":"mataroski"},
+    {"usernam":"Anna", "pass":"Smith"},
+    {"usernam":"Peter","pass": "Jones"}
+]};
+function clicked(){
+    
+    var user = document.getElementById('Username');
+    var pass = document.getElementById('Password');
+    
+	var c=0;var i=0;
+    for(i=0;i<3;i++)
+	{
+    if(user.value == data.users[i].usernam && pass.value == data.users[i].pass)
+    {
+	c=c+1;
+        window.open("/home/anant/Desktop/Cart/index.html");
+	break;
+    }
+}
+    if(c==0)
+	{
+	alert("incorrect password or username")
+	}
+}
+
+function signup(){
+    window.open("/home/anant/Desktop/register.html")
+}
+function getImagePath(){
+   document.getElementById("image").setAttribute("src","http://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png");
+   }
+
+    
+    
+
+        
